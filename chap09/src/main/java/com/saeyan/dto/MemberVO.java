@@ -7,7 +7,7 @@ public class MemberVO {
 	private String pwd;
 	private String email;
 	private String phone;
-	private int admin;
+	private String admin;
 	
 	
 	public String getName() {
@@ -40,11 +40,11 @@ public class MemberVO {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public int getAdmin() {
+	public String getAdmin() {
 		return admin;
 	}
-	public void setAdmin(int admin) {
-		this.admin = admin;
+	public void setAdmin(String string) {
+		this.admin = string;
 	}
 	
 	@Override
