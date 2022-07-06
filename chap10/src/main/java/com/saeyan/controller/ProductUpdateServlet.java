@@ -24,7 +24,7 @@ public class ProductUpdateServlet extends HttpServlet {
 		String code = request.getParameter("code");
 		
 		ProductDAO pDao = ProductDAO.getInstance();
-		ProductVO pVo = pDao.selectProductByCode("code");
+		ProductVO pVo = pDao.selectProductByCode(code);
 		
 		request.setAttribute("product", pVo);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("product/productUpdate.jsp");

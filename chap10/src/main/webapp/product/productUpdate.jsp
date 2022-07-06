@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>상품 관리</title>
-<link rel="stylesheet" type="text/css" href="css/shopping.css">
+<link rel="stylesheet" type="text/css" href="../css/shopping.css">
 <script type = "text/javascript" src="script/product.js"></script>
 </head>
 <body>
