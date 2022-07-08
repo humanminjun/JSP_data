@@ -1,6 +1,7 @@
 package sec01.ex01;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -33,7 +34,7 @@ public class MemberController extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		List membersList = memberDAO.listMembers();
 		request.setAttribute("membersList", membersList);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/test01/listMembers.jsp");
+		RequestDispatcher dispatch = request.getRequestDispatcher("/test01/listMembers.jsp");
 		dispatch.forward(request, response);
 		
 		
